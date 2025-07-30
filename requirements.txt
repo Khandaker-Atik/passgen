@@ -1,0 +1,7 @@
+flask
+openai
+requests
+python-dotenv
+cors
+flask-cors
+flask-restful

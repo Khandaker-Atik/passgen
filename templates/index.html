@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Password Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="ai-container">
+        <h1 class="ai-title">🔒 AI Password Generator</h1>
+        <div class="ai-box">
+            <div class="ai-animation" id="ai-animation">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="ai-chat" id="ai-chat">
+                <div class="ai-message ai-message-user">Heyyy! I am your AI assistant. Ready to create a secure password for you. 😊</div>
+            </div>
+            <form id="password-form">
+                <div class="form-group">
+                    <label>Password Length</label>
+                    <input type="number" id="length" name="length" min="8" max="32" value="16">
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" id="uppercase" name="uppercase" checked> Uppercase</label>
+                    <label><input type="checkbox" id="lowercase" name="lowercase" checked> Lowercase</label>
+                    <label><input type="checkbox" id="numbers" name="numbers" checked> Numbers</label>
+                    <label><input type="checkbox" id="symbols" name="symbols" checked> Symbols</label>
+                </div>
+                <button type="submit" class="ai-btn">Generate AI Password</button>
+            </form>
+        </div>
+        <div class="ai-footer">
+        Developed by <a href="https://atikur-rahman.vercel.app" target="_blank" rel="noopener noreferrer">Khandaker Atik</a> @ 2025
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  min-height: 100vh;
+}
+
+.ai-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.ai-title {
+  font-size: 2.2rem;
+  color: #6c47ff;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff6;
+  text-align: center;
+}
+
+.ai-box {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px #6c47ff22;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.ai-animation {
+  margin-bottom: 1rem;
+  height: 32px;
+  display: none;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #6c47ff;
+  border-radius: 50%;
+  animation: bounce 1s infinite alternate;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-12px); }
+}
+
+.ai-chat {
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ai-message {
+  background: #f3f3ff;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 8px #6c47ff11;
+  max-width: 100%;
+  word-break: break-word;
+}
+.ai-message-user {
+  align-self: flex-start;
+  background: #e0c3fc;
+}
+.ai-message-ai {
+  align-self: flex-end;
+  background: #d1e7ff;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.form-group label {
+  font-size: 1rem;
+  color: #6c47ff;
+  font-weight: 500;
+}
+.form-group input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #6c47ff44;
+  font-size: 1rem;
+  width: 100%;
+}
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+.ai-btn {
+  background: #6c47ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.ai-btn:hover {
+  background: #4b2bbd;
+}
+
+.ai-footer {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #6c47ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #fff6;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .ai-box {
+    padding: 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .ai-title {
+    font-size: 1.3rem;
+  }
+}
