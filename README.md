@@ -7,7 +7,7 @@ A modern, AI-powered password generator built with Flask and OpenRouter API that
 
 ## ✨ Features
 
-- **AI-Powered Generation**: Uses OpenAI's API to generate intelligent, secure passwords
+- **AI-Powered Generation**: Uses OpenRouter API to generate intelligent, secure passwords
 - **Interactive Chat Interface**: Modern AI assistant-style user experience
 - **Customizable Options**: 
   - Password length (8-32 characters)
